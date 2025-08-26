@@ -1,0 +1,42 @@
+---------------- File Test Results -------------------------
+Plaintext: abcdefghijklmnopq
+Executable CipherText: f65458304cc7bc881431e5b8781d96f7
+Python CipherText: f65458304cc7bc881431e5b8781d96f7
+Egg 0: 0x20
+Global Flag: 0x5f
+Time of execution: 0.000601 seconds
+Match Result: Matched
+
+Plaintext: qrstuvwxyzabcdef
+Executable CipherText: e4cdd1827eca97f616a6208a1851a242
+Python CipherText: e4cdd1827eca97f616a6208a1851a242
+Egg 0: 0xf2
+Global Flag: 0xc3
+Time of execution: 0.000481 seconds
+Match Result: Matched
+
+Plaintext: 1234567890abcdef
+Executable CipherText: 7c1d469b54f224627817eb9ff260b7cb
+Python CipherText: 7c1d469b54f224627817eb9ff260b7cb
+Egg 0: 0x79
+Global Flag: 0x60
+Time of execution: 0.000531 seconds
+Match Result: Matched
+
+Plaintext: abcdef1234567890
+Executable CipherText: d9678d4ed4f7400dca88910b9ccec573
+Python CipherText: d9678d4ed4f7400dca88910b9ccec573
+Egg 0: 0x9f
+Global Flag: 0x9a
+Time of execution: 0.00042 seconds
+Match Result: Matched
+
+Plaintext: ghijklmnopqrstuv
+Executable CipherText: 258486e57e845a7c23ffd7da3f39ebad
+Python CipherText: 258486e57e845a7c23ffd7da3f39ebad
+Egg 0: 0x74
+Global Flag: 0x0f
+Time of execution: 0.000436 seconds
+Match Result: Matched
+
+Size of executable: 909368 bytes

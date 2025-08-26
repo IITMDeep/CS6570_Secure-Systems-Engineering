@@ -1,0 +1,29 @@
+# Use older base image for better GLIBC compatibility
+FROM ubuntu:20.04
+
+# Suppress interactive prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install necessary build tools
+RUN apt-get update && \
+    apt-get install -y gcc vim-common bash python3 python3-pip&& \
+    rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /workspace
+
+# Copy all source files into the container
+COPY . .
+
+# Ensure run.sh is executable
+RUN chmod +x run.sh
+
+# Create output directory
+RUN mkdir -p /workspace/output
+
+# Run full build + encryption pipeline and copy final binary
+RUN ./run.sh
+RUN cp /workspace/safe_main /workspace/output/
+
+# Default command: just start a shell (can override with docker run)
+CMD ["bash"]
